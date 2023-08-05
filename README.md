@@ -20,5 +20,8 @@ git clone https://github.com/Mohaymen-Academy/FE_Team06_Summer1402_Vitrin_Clone_
 docker compose up --build
 ```
 3. Open `http://localhost:5173/` in your browser
+```
+http://localhost:5173/
+```
 
 
