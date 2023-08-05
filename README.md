@@ -21,7 +21,12 @@ docker compose up --build
 ```
 3. Open `http://localhost:5173/` in your browser
 ```
-http://localhost:5173/
+http://localhost:4173/
 ```
 
-
+# production
+for production you can use this command
+```
+git checkout product
+docker compose up --build
+```
