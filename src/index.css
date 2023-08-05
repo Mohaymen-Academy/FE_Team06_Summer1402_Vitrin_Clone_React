@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+      font-family: 'Vazir';
+    }
+  }
+  
+@layer components{
+    .bluheader{ 
+        @apply bg-blue-700  w-[100%] flex flex-col justify-start vsmmobile:hidden;
+    }
+    .whiteheader{
+        @apply bg-white flex flex-row text-center h-min  items-center shadow-xl;    
+        
+    }
+    .width660{
+        @apply w-[660px]  h-[150px];
+    }
+    .cardimg{
+        @apply mb-[1.5rem] vsmmobile:max-w-[100%];
+    }
+    .sticky{
+       @apply fixed top-0 w-[100%] z-10 ;
+    }
+    .stickyheader{
+        @apply fixed top-0 w-[100%] z-10 ;
+    }
+    .closeanimation{
+        @apply top-[-90px];
+    }
+    .closelogo{
+        @apply opacity-0 vsmmobile:opacity-100;
+    }
+    .bigcardimages{
+        @apply w-[100%] h-[100%] p-0 rounded-2xl;
+    }
+    .bigslide{
+        @apply w-[100%] h-[100%] ;
+    }
+    .itesm{
+        @apply h-[75px] ;
+    }
+    .skeletonwithavatar{
+        @apply w-[75px] !important;
+    }
+    .iconscarda{
+        @apply w-max flex px-4  vsmmobile:w-[22%] mobile:w-[22%];
+    }
+    .logoanimeclose{
+        @apply animate-logoclose vsmmobile:fixed vsmmobile:top-0 !important;
+    }
+    .logoanimeopen{
+        @apply animate-logoopen vsmmobile:fixed;
+    }
+    .iconcardimg{
+        @apply desktop:w-[125px]  tablet:w-[100px] mobile:w-[90px] smmobile:w-[80px] vsmmobile:w-[65px]; 
+    }
+    .slide{
+        @apply w-[10px]
+    }
+    .carouselconteiner{
+        @apply w-[94%] pr-[7%];
+    }
+    .footerfillicon{
+        @apply h-6 w-6 text-black hover:fill-current hover:text-white;
+    }
+    .sliderDiv{
+        @apply flex mb-[65px];
+    }
+    
+}
+@layer utilities{
+    .ltr{
+        direction: ltr;
+    }
+    .rtl{
+        direction: rtl;
+    }
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir/Vazirmatn-FD-ExtraLight.ttf');
+}

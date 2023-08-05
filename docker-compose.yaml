@@ -1,0 +1,8 @@
+version: '3'
+services:
+  vit:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - '5173:5173'
